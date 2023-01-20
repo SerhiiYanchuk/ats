@@ -1,0 +1,25 @@
+<div class="header">
+  <h3>
+    <span>{{ title }}</span>
+    <span class="only-color meta"> ({{ data.length }})</span>
+    <span *ngIf="index === 0"  class="self-applied-info">
+      <mat-icon matTooltip="This column appears when a user applied for a job on their own">
+        info
+      </mat-icon>
+    </span>
+  </h3>
+  <button mat-icon-button>
+    <mat-icon>more_vert</mat-icon>
+  </button>
+</div>
+<div class="content">
+  <div class="cards">
+    <app-candidate-card
+      [candidate]="card"
+      [isDraggable]="isDraggable"
+      [isClickable]="true"
+      (clickAction)="emitClick(card.id)"
+      *ngFor="let card of data"
+    ></app-candidate-card>
+  </div>
+</div>

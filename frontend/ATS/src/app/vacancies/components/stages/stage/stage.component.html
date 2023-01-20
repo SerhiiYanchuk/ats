@@ -1,0 +1,12 @@
+<div class = "stage-card" >
+    <mat-icon>drag_indicator</mat-icon>
+    <div class="stage-title">{{stage.name}}</div>
+    <div>
+        <button mat-icon-button (click)="editStage()">
+            <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="deleteStage()">
+            <mat-icon>delete</mat-icon>
+        </button>
+    </div>
+</div>

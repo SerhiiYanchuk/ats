@@ -1,0 +1,188 @@
+@import "/src/common.scss";
+
+.login-side-block,
+.registration-side-block,
+.reset-password-side-block {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    height: 100%;
+}
+
+.login-container,
+.registration-container,
+.reset-password-container {
+    margin: auto;
+}
+
+.login-text,
+.registration-text,
+.reset-password-text {
+    margin-bottom: 10px;
+}
+
+.login-text span,
+.registration-text span,
+.reset-password-text span {
+    font-family: $primary-font;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    color: $primary-color-blue;
+}
+
+.login-container a,
+.registration-container a,
+.reset-password-container a {
+    text-decoration: none;
+}
+
+.login-container a span,
+.registration-container a span,
+.reset-password-container a span {
+    font-family: $primary-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: $primary-color-blue;
+}
+
+.login-input-email,
+.registration-input-email {
+    margin-bottom: 16px;
+}
+
+.login-input-password,
+.registration-input-password,
+.reset-password-input-password {
+    margin-bottom: 18px;
+}
+
+.login-input-password-title-block,
+.registration-input-password-title-block,
+.reset-password-input-password-title-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-input-password-title-block:first-child a,
+.registration-input-password-title-block:first-child a,
+.reset-password-input-password-title-block:first-child a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: $primary-color-blue;
+}
+
+input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px #ececed inset;
+}
+
+.login-input-password-title-block:first-child a {
+    cursor: pointer;
+}
+
+.login-input-password-title-block:first-child a:hover {
+    color: #808080;
+}
+
+.login-input-title,
+.registration-input-title,
+.reset-password-input-title {
+    font-family: $primary-font;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: #1d1d1d;
+    margin-bottom: 3px;
+}
+
+.login-show-password,
+.registration-show-password,
+.reset-password-show-password{
+    color: #c6c8cd;
+    height: 17px;
+    cursor: pointer;
+}
+
+.mat-button {
+    width: 327px;
+    height: 45px;
+}
+
+::ng-deep .login-container,
+::ng-deep .registration-container,
+::ng-deep .reset-password-container,
+::ng-deep .dialog-container{
+    .mat-form-field-suffix {
+        width: 17px;
+        height: 17px;
+        align-self: center;
+    }
+
+    .mat-button.mat-button {
+        width: 327px;
+        height: 45px;
+    }
+
+    .mat-button:disabled {
+        background-color: lightgray;
+    }
+
+    .mat-form-field-wrapper.mat-form-field-wrapper {
+        width: 327px;
+        height: 45px;
+    }
+
+    .mat-icon-button {
+        width: none;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-infix {
+        padding: 0;
+    }
+
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        padding: 0;
+        background-color: rgba($color: #000000, $alpha: 0);
+    }
+}
+
+:host ::ng-deep .login-container,
+:host ::ng-deep .registration-container,
+:host ::ng-deep .reset-password-container
+:host ::ng-deep .dialog-container{
+    .mat-form-field.mat-focused .mat-form-field-label,
+    .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+        color: gray;
+    }
+    .mat-form-field-appearance-fill .mat-form-field-flex {
+        padding: 0;
+        align-items: center;
+    }
+
+    .mat-form-field-wrapper.mat-form-field-wrapper {
+        color: #000;
+    }
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-prefix .mat-icon-button,
+    .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-icon-button {
+        display: inline-flex;
+        width: 0;
+        height: 0;
+        justify-content: left;
+        align-items: flex-start;
+    }
+
+    .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-datepicker-toggle-default-icon,
+    .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-datepicker-toggle-default-icon {
+        width: 17px;
+    }
+    .mat-form-field-appearance-legacy .mat-form-field-prefix .mat-icon-button,
+    .mat-form-field-appearance-legacy .mat-form-field-suffix .mat-icon-button {
+        display: flex;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,16 @@
+:host {
+    display: flex;
+    background:url('/assets/images/loginAndRegistrationBackgroundImage.png')  100% 100% no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.logo-wrapper {
+    margin: auto;
+}
+
+.logo-image{
+    width: 422px;
+    height: 212px;
+    margin-right: -30px;
+}

@@ -1,0 +1,32 @@
+/**
+ * Temporary styles
+ */
+
+body {
+	width: max-content;
+	height: min-content;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.button {
+	background-color: #ee2a64;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 20px;
+	color: white;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.error {
+	color: red;
+	display: none;
+	margin-top: 10px;
+}

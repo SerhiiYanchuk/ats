@@ -1,0 +1,22 @@
+{
+    "name": "LinkedIn + Scout",
+    "description": "Scout integration into LinkedIn",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+        "default_popup": "ui.html",
+        "default_icon": {
+            "16": "/icons/logo.png",
+            "32": "/icons/logo.png",
+            "48": "/icons/logo.png",
+            "128": "/icons/logo.png"
+        }
+    },
+    "icons": {
+        "16": "/icons/logo.png",
+        "32": "/icons/logo.png",
+        "48": "/icons/logo.png",
+        "128": "/icons/logo.png"
+    }
+}

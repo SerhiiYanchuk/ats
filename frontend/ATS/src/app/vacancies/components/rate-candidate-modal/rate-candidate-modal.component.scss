@@ -1,0 +1,75 @@
+@import "../../../../common.scss";
+
+.space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  font-size: 12px;
+  width: 12px;
+  height: 12px;
+}
+
+.content {
+  overflow: visible !important;
+}
+
+.attention {
+  border-radius: 15px;
+  padding: 20px;
+  border: 3px solid $accent-color;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.padding {
+  padding-bottom: 15px;
+}
+
+.criterias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .criteria {
+    width: 230px;
+  }
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.button {
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-color;
+}
+
+::ng-deep {
+  .textarea-form-field {
+    width: 100%;
+
+    .mat-form-field-wrapper {
+      box-sizing: border-box;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .textarea {
+      min-height: 80px;
+      max-height: 140px;
+    }
+  }
+}
